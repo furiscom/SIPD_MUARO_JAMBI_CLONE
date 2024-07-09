@@ -9,7 +9,6 @@ This project demonstrates how to perform CRUD (Create, Read, Update, Delete) ope
 - [Getting Started](#getting-started)
 - [Database Schema](#database-schema)
 - [File Structure](#file-structure)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -122,59 +121,6 @@ The database schema consists of the following tables:
 |-- index.php
 ```
 
-## Usage
-
-### Create
-
-To create a new record, you can use the `create` method provided in each class.
-
-```php
-require_once 'Urusan.php';
-
-$urusan = new Urusan();
-$urusan->create("New Urusan");
-```
-
-### Read
-
-To read records, you can use the `read` method provided in each class.
-
-```php
-require_once 'Urusan.php';
-
-$urusan = new Urusan();
-$result = $urusan->read();
-
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id_urusan"]. " - Name: " . $row["nama_urusan"]. "<br>";
-    }
-} else {
-    echo "0 results";
-}
-```
-
-### Update
-
-To update a record, you can use the `update` method provided in each class.
-
-```php
-require_once 'Urusan.php';
-
-$urusan = new Urusan();
-$urusan->update(1, "Updated Urusan");
-```
-
-### Delete
-
-To delete a record, you can use the `delete` method provided in each class.
-
-```php
-require_once 'Urusan.php';
-
-$urusan = new Urusan();
-$urusan->delete(1);
-```
 
 ## Contributing
 
