@@ -112,6 +112,10 @@ The database schema consists of the following tables:
 
 ```
 /path/to/your/project/
+|-- css/
+| |-- bootstrap.min.css
+|-- js/
+| |-- bootstrap.bundle.min.js
 |-- db.php
 |-- Urusan.php
 |-- BidangUrusan.php
